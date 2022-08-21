@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alextran1502/immich-cli.git"
+    "url": "git+https://github.com/panoti/immich-cli.git"
   },
   "keywords": [
     "immich",
     "cli"
   ],
-  "author": "panoti",
+  "author": "Alex Tran",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alextran1502/immich-cli/issues"
