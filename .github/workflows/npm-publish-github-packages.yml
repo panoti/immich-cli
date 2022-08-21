@@ -32,6 +32,12 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
       - run: npm run build
+      - run: |
+          echo 'No .npmrc found! Creating one now.'
+          {
+            echo "//npm.pkg.github.com/:_authToken=\${secrets.GITHUB_TOKEN}"
+          } >> .npmrc
+      # - run: echo "Created the following .npmrc:"; cat .npmrc
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
