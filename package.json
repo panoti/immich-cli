@@ -1,5 +1,5 @@
 {
-  "name": "immich",
+  "name": "@panoti/immich",
   "version": "0.17.0",
   "description": "Immich CLI",
   "main": "bin/index.js",
